@@ -26,54 +26,54 @@ import pandas as pd
 df=pd.read_csv("/content/SAMPLEIDS.csv")
 df
 ```
-![output 1](https://github.com/chgeethika/ex-no1/assets/142209368/cc27d6cf-05b5-4b55-9c0a-2c03001688f9)
+![image](https://github.com/23004205/exno1/assets/138971114/2ec36b41-181a-47ed-9213-237b5d64ddeb)
 ```
 print(df.head(7))
 ```
-![o 3](https://github.com/chgeethika/ex-no1/assets/142209368/ad269980-fb09-4705-991a-7076f0b28700)
+![image](https://github.com/23004205/exno1/assets/138971114/2fbf6d9a-bff1-4ec2-83ce-a11aaa039f09)
 ```
 print(df.tail(2))
 ```
-![o4](https://github.com/chgeethika/ex-no1/assets/142209368/99c1ad9e-d98c-44a3-96a5-61a8622d6178)
+![image](https://github.com/23004205/exno1/assets/138971114/a988bdbd-1c2f-4ada-8fcc-6bb8a6047eff)
 ```
 df.info()
 ```
-![o5](https://github.com/chgeethika/ex-no1/assets/142209368/811fbadb-3961-4c7d-b945-60ef2d52005c)
+![image](https://github.com/23004205/exno1/assets/138971114/8a8131a3-ad92-4df5-9811-3932051defc1)
 ```
 print(df.describe())
 ```
-![o6](https://github.com/chgeethika/ex-no1/assets/142209368/0c207343-ef54-4b43-b547-1a5af544a062)
+![image](https://github.com/23004205/exno1/assets/138971114/26e8713c-ab01-4c75-bac7-e669ee6da980)
 ```
 df.isnull().sum()
 ```
-![o7](https://github.com/chgeethika/ex-no1/assets/142209368/87c68baa-7624-4e1a-971a-80c83eb61d90)
+![image](https://github.com/23004205/exno1/assets/138971114/7a6f81d7-b8e3-434e-b2cb-f2a390b8dbe6)
 ```
 df.nunique()
 ```
-![o8](https://github.com/chgeethika/ex-no1/assets/142209368/9d9493c9-6e0b-4ee6-89be-17cbd2e5e56d)
+![image](https://github.com/23004205/exno1/assets/138971114/af916f5c-b79b-4d7a-b15e-8937e3617d8e)
 ```
 mn=df.TOTAL.mean()
 mn
 ```
-![mn](https://github.com/chgeethika/ex-no1/assets/142209368/37a126cd-8ea9-4c65-af75-2697bddd6a35)
+![image](https://github.com/23004205/exno1/assets/138971114/47422bbb-b45b-450c-8eec-79361e0834ae)
 
 ```
 df.TOTAL.fillna(mn,inplace=True)
 df
 ```
-![o9](https://github.com/chgeethika/ex-no1/assets/142209368/52bc6f65-7e58-4246-b74d-aaab99b4fb0d)
+![image](https://github.com/23004205/exno1/assets/138971114/80680dce-3f67-46d9-b7a2-4b430d430f48)
 ```
 min=df.M4.min()
 min
 ```
-![min](https://github.com/chgeethika/ex-no1/assets/142209368/3571db1b-b18c-439e-814b-4ecc847615c4)
+![image](https://github.com/23004205/exno1/assets/138971114/9992df49-1f2e-4bed-818a-760797c2845d)
 ```
 df.M4.fillna(min,inplace=True)
 df
 ```
-![o10](https://github.com/chgeethika/ex-no1/assets/142209368/193b4f4d-cb59-4493-bafe-2c3aebb9c503)
+![image](https://github.com/23004205/exno1/assets/138971114/3218c02e-1da2-469f-a0d1-485cc6fefb37)
 
-![o10](https://github.com/chgeethika/ex-no1/assets/142209368/5a0746c8-ed4d-4dc3-a67f-c6e9656ce551)
+![image](https://github.com/23004205/exno1/assets/138971114/e7e885e4-63be-4ca6-a9f9-bae1e3b92799)
 ```
 import pandas as pd
 import seaborn as sns
@@ -81,16 +81,16 @@ age=[1,3,28,27,25,92,30,39,40,50,26,24,29,94]
 af=pd.DataFrame(age)
 af
 ```
-![o12](https://github.com/chgeethika/ex-no1/assets/142209368/35531f01-5402-4cc1-991f-a07e62dacf48)
+![op1](https://github.com/23004205/exno1/assets/138971114/08588c9d-f8c7-40da-bf7a-267a32303e13)
 ```
 sns.boxplot(data=af)
 ```
-![o13](https://github.com/chgeethika/ex-no1/assets/142209368/32e94065-fd93-4f9e-93ec-5f3894e955b4)
+![op2](https://github.com/23004205/exno1/assets/138971114/643c099a-0cf8-4b80-8e46-1899ae2d0632)
 
 ```
 sns.scatterplot(data=af)
 ```
-![o14](https://github.com/chgeethika/ex-no1/assets/142209368/3d0adb77-0703-44c3-9261-f74cb1f0b920)
+![op3](https://github.com/23004205/exno1/assets/138971114/4ac41a9a-bb90-4dd3-8c08-538c92536862)
 ```
 q1=af.quantile(0.25)
 q2=af.quantile(0.50)
@@ -102,38 +102,38 @@ low
 high=q3+1.5*iqr
 high
 ```
-![o15](https://github.com/chgeethika/ex-no1/assets/142209368/225a452e-83d4-4210-8748-e8add5b925e1)
+![op4](https://github.com/23004205/exno1/assets/138971114/4358c9f1-ca3a-401d-a52e-f26bc767ce5e)
 ```
 af=af[((af>=low)&(af<=high))]
 af
 ```
-![o16](https://github.com/chgeethika/ex-no1/assets/142209368/49056f63-9937-4109-a285-8c4388441f46)
+![op5](https://github.com/23004205/exno1/assets/138971114/4c396f17-b505-4a38-b9d1-43da9cdf128f)
 ```
 af.dropna()
 ```
-![o17](https://github.com/chgeethika/ex-no1/assets/142209368/466a854d-4b2f-43c8-85f8-ac94ad6e38d5)
+![op6](https://github.com/23004205/exno1/assets/138971114/b4570b42-3c8c-4b1e-814b-d7955a94f796)
 ```
 sns.boxplot(data=af)
 ```
-![o18](https://github.com/chgeethika/ex-no1/assets/142209368/7b62062c-59cc-4789-bbcf-5e4fd63c0b53)
+![op7](https://github.com/23004205/exno1/assets/138971114/b456f34f-8c4e-43ab-95a1-9c1e5f7a6d5b)
 
 ```
 sns.scatterplot(data=af)
 ```
-![o19](https://github.com/chgeethika/ex-no1/assets/142209368/d294460b-cd0a-4f8e-8ea7-495169adb75c)
+![op8](https://github.com/23004205/exno1/assets/138971114/5a82771d-9a44-48df-9114-23cf347f2ec4)
 ```
 data=[1,12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,99,102,105]
 df=pd.DataFrame(data)
 df
 ```
-![o20](https://github.com/chgeethika/ex-no1/assets/142209368/bff14676-97ae-4ebd-9897-89d9e8a3bc87)
+![op9](https://github.com/23004205/exno1/assets/138971114/d4bcee07-e139-47bb-ac02-1d585e6b4990)
 ```
 import numpy as np
 from scipy import stats
 z=np.abs(stats.zscore(df))
 z
 ```
-![o22](https://github.com/chgeethika/ex-no1/assets/142209368/9a5242a4-f1c6-4ffa-96b1-fa68c0aa81ab)
+![op10](https://github.com/23004205/exno1/assets/138971114/d73126e3-ef16-4d36-88bd-33061778eb0a)
 
 # Result
 Thus the given program executed successfully.
